@@ -6,7 +6,9 @@ module.exports = {
       "jest-transform-stub",
     "^.+\\.jsx?$": "babel-jest"
   },
-  transformIgnorePatterns: ["/node_modules/"],
+  transformIgnorePatterns: [
+    "/node_modules/(?!vuetify).+\\.js$"
+  ],
   moduleNameMapper: {
     "^@/(.*)$": "<rootDir>/src/$1"
   },
